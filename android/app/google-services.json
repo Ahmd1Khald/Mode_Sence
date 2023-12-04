@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1037562187173",
+    "firebase_url": "https://flutter-project-a6225-default-rtdb.firebaseio.com",
+    "project_id": "flutter-project-a6225",
+    "storage_bucket": "flutter-project-a6225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037562187173:android:221c427a4493d75c06ec4c",
+        "android_client_info": {
+          "package_name": "com.example.sensor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAowdYDeVfnfWqvkjc_9pkCcjjaTJxouWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
