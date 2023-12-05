@@ -1,7 +1,6 @@
-import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-import '../../../../Core/constance/assets_manager.dart';
 import '../../../../Core/constance/my_colors.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -13,42 +12,34 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   bool showCheckButton = true;
-  final databaseReference =
-      FirebaseDatabase.instance.ref('Embedded/Action needed/value');
+  // final databaseReference =
+  //     FirebaseDatabase.instance.ref('Embedded/Action needed/value');
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.creamColor,
-      appBar: AppBar(
-        centerTitle: true,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              "ICGM",
-              style: TextStyle(
-                color: MyColors.darkBrown,
-                fontWeight: FontWeight.bold,
-                fontSize: 34,
+      backgroundColor: MyColors.appBackGroundColor,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              const SizedBox(
+                height: 60,
               ),
-            ),
-            const SizedBox(
-              width: 5,
-            ),
-            Image.asset(
-              AssetsManager.appImage2,
-              width: 40,
-              height: 40,
-              fit: BoxFit.cover,
-            ),
-          ],
+              Text(
+                "Mode Sence",
+                textWidthBasis: TextWidthBasis.longestLine,
+                style: GoogleFonts.anton(
+                  color: MyColors.creamColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 60,
+                ),
+              ),
+            ],
+          ),
         ),
-        backgroundColor: MyColors.appBackGroundColor,
-        elevation: 0,
-      ),
-      body: Column(
-        children: [],
       ),
     );
   }

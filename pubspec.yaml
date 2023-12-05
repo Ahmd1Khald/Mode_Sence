@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  # fonts
+  google_fonts:
   #loading
   flutter_spinkit: ^5.2.0
   #share
@@ -19,6 +21,7 @@ dependencies:
   rename: ^3.0.1
   #ui
   shimmer: ^3.0.0
+  animated_text_kit:
   #firebase
   firebase_core: ^2.21.0
   firebase_database: ^10.3.3
