@@ -4,6 +4,7 @@ import 'package:sensor/Core/constance/app_function.dart';
 import 'package:sensor/Features/structions/presentation/views/instructions_screen.dart';
 
 import '../../../../Core/constance/my_colors.dart';
+import '../../../quiz/presentation/views/quiz_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -62,7 +63,10 @@ class _HomeScreenState extends State<HomeScreen> {
               Center(
                 child: InkWell(
                   splashColor: MyColors.creamColor,
-                  onTap: () {},
+                  onTap: () {
+                    AppFunctions.pushTo(
+                        context: context, screen: const QuizScreen());
+                  },
                   child: Column(
                     //crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
