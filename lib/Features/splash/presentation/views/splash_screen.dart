@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.appBackGroundColor,
+      backgroundColor: AppColors.appBackGroundColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   WavyAnimatedText(
                     'Mode Sence',
                     textStyle: GoogleFonts.anton(
-                      color: MyColors.creamColor,
+                      color: AppColors.creamColor,
                       fontWeight: FontWeight.bold,
                       fontSize: 60,
                     ),
@@ -62,13 +62,13 @@ class _SplashScreenState extends State<SplashScreen> {
                 width: double.infinity,
                 height: MediaQuery.of(context).size.width * 0.4,
                 decoration: const BoxDecoration(
-                  color: MyColors.creamColor,
+                  color: AppColors.creamColor,
                 ),
                 child: Center(
                   child: Text(
                     'Be your own therapist',
                     style: GoogleFonts.acme(
-                      color: MyColors.darkBlueColor,
+                      color: AppColors.darkBlue,
                       fontWeight: FontWeight.w700,
                       fontSize: 40,
                     ),

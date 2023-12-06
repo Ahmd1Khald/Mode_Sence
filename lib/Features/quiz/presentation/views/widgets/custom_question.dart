@@ -45,7 +45,7 @@ class _CustomQuestionState extends State<CustomQuestion> {
           style: GoogleFonts.rubik(
             letterSpacing: 2,
             decoration: TextDecoration.underline,
-            color: MyColors.appBackGroundColor,
+            color: AppColors.appBackGroundColor,
             fontWeight: FontWeight.w700,
             fontSize: 25,
           ),
@@ -58,15 +58,15 @@ class _CustomQuestionState extends State<CustomQuestion> {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.7,
               child: RadioListTile(
-                fillColor:
-                    const MaterialStatePropertyAll(MyColors.appBackGroundColor),
-                activeColor: MyColors.creamColor,
+                fillColor: const MaterialStatePropertyAll(
+                    AppColors.appBackGroundColor),
+                activeColor: AppColors.creamColor,
                 title: Text(
                   widget.ans1,
                   style: GoogleFonts.rubik(
                     letterSpacing: 2,
                     //decoration: TextDecoration.underline,
-                    color: MyColors.appBackGroundColor,
+                    color: AppColors.appBackGroundColor,
                     fontWeight: FontWeight.w600,
                     fontSize: 22,
                   ),
@@ -88,15 +88,15 @@ class _CustomQuestionState extends State<CustomQuestion> {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.7,
               child: RadioListTile(
-                fillColor:
-                    const MaterialStatePropertyAll(MyColors.appBackGroundColor),
-                activeColor: MyColors.creamColor,
+                fillColor: const MaterialStatePropertyAll(
+                    AppColors.appBackGroundColor),
+                activeColor: AppColors.creamColor,
                 title: Text(
                   widget.ans2,
                   style: GoogleFonts.rubik(
                     letterSpacing: 2,
                     //decoration: TextDecoration.underline,
-                    color: MyColors.appBackGroundColor,
+                    color: AppColors.appBackGroundColor,
                     fontWeight: FontWeight.w600,
                     fontSize: 22,
                   ),
@@ -118,15 +118,15 @@ class _CustomQuestionState extends State<CustomQuestion> {
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.7,
               child: RadioListTile(
-                fillColor:
-                    const MaterialStatePropertyAll(MyColors.appBackGroundColor),
-                activeColor: MyColors.creamColor,
+                fillColor: const MaterialStatePropertyAll(
+                    AppColors.appBackGroundColor),
+                activeColor: AppColors.creamColor,
                 title: Text(
                   widget.ans3,
                   style: GoogleFonts.rubik(
                     letterSpacing: 2,
                     //decoration: TextDecoration.underline,
-                    color: MyColors.appBackGroundColor,
+                    color: AppColors.appBackGroundColor,
                     fontWeight: FontWeight.w600,
                     fontSize: 22,
                   ),

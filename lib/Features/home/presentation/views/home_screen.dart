@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.creamColor,
+      backgroundColor: AppColors.creamColor,
       body: SafeArea(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Center(
                 child: InkWell(
-                  splashColor: MyColors.creamColor,
+                  splashColor: AppColors.creamColor,
                   onTap: () {
                     AppFunctions.pushTo(
                         context: context, screen: const InstructionsScreen());
@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Icon(
                         Icons.document_scanner,
-                        color: MyColors.appBackGroundColor,
+                        color: AppColors.appBackGroundColor,
                         size: MediaQuery.of(context).size.width * 0.3,
                       ),
                       const SizedBox(
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         'INSTRUCTIONS',
                         style: GoogleFonts.rubik(
                           fontSize: 32,
-                          color: MyColors.appBackGroundColor,
+                          color: AppColors.appBackGroundColor,
                           fontWeight: FontWeight.w500,
                         ),
                       ),
@@ -62,7 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Center(
                 child: InkWell(
-                  splashColor: MyColors.creamColor,
+                  splashColor: AppColors.creamColor,
                   onTap: () {
                     AppFunctions.pushTo(
                         context: context, screen: const QuizScreen());
@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       Icon(
                         Icons.play_circle,
-                        color: MyColors.appBackGroundColor,
+                        color: AppColors.appBackGroundColor,
                         size: MediaQuery.of(context).size.width * 0.3,
                       ),
                       const SizedBox(
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         'START',
                         style: GoogleFonts.rubik(
                           fontSize: 32,
-                          color: MyColors.appBackGroundColor,
+                          color: AppColors.appBackGroundColor,
                           fontWeight: FontWeight.w500,
                         ),
                       ),

@@ -34,7 +34,7 @@ class _ResultScreenState extends State<ResultScreen> {
               AppVariables.xValue += 10;
             }
             return Scaffold(
-              backgroundColor: MyColors.appBackGroundColor,
+              backgroundColor: AppColors.appBackGroundColor,
               body: SafeArea(
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
@@ -50,7 +50,7 @@ class _ResultScreenState extends State<ResultScreen> {
                           textAlign: TextAlign.start,
                           style: GoogleFonts.rubik(
                             fontSize: 35,
-                            color: MyColors.creamColor,
+                            color: AppColors.creamColor,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -61,7 +61,7 @@ class _ResultScreenState extends State<ResultScreen> {
                           AppVariables.xValue.toString(),
                           style: GoogleFonts.rubik(
                             fontSize: 70,
-                            color: MyColors.creamColor,
+                            color: AppColors.creamColor,
                             fontWeight: FontWeight.w500,
                           ),
                         ),

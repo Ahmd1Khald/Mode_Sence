@@ -28,7 +28,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.creamColor,
+      backgroundColor: AppColors.creamColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -180,7 +180,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
                         width: 2,
-                        color: MyColors.appBackGroundColor,
+                        color: AppColors.appBackGroundColor,
                       )),
                   child: MaterialButton(
                     height: MediaQuery.of(context).size.width * 0.15,
@@ -189,7 +189,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       style: GoogleFonts.rubik(
                         letterSpacing: 2,
                         decoration: TextDecoration.underline,
-                        color: MyColors.appBackGroundColor,
+                        color: AppColors.appBackGroundColor,
                         fontWeight: FontWeight.w700,
                         fontSize: 25,
                       ),

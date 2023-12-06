@@ -8,13 +8,13 @@ class LoadingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyColors.appBackGroundColor,
+      backgroundColor: AppColors.appBackGroundColor,
       body: Center(
         child: SpinKitWave(
           itemBuilder: (BuildContext context, int index) {
             return DecoratedBox(
               decoration: BoxDecoration(
-                color: index.isEven ? Colors.white : MyColors.creamColor,
+                color: index.isEven ? Colors.white : AppColors.creamColor,
               ),
             );
           },

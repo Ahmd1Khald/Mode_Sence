@@ -33,14 +33,14 @@ class _InstructionsScreenState extends State<InstructionsScreen> {
                     width: MediaQuery.of(context).size.width * 0.5,
                     height: MediaQuery.of(context).size.width * 0.18,
                     decoration: BoxDecoration(
-                        color: MyColors.creamColor,
+                        color: AppColors.creamColor,
                         borderRadius: BorderRadius.circular(15)),
                     child: Center(
                         child: Text(
                       'Instructions',
                       style: GoogleFonts.rubik(
                         fontSize: 24,
-                        color: MyColors.appBackGroundColor,
+                        color: AppColors.appBackGroundColor,
                         fontWeight: FontWeight.w500,
                       ),
                     )),
