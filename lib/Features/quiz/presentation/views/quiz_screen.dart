@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sensor/Core/constance/app_variables.dart';
 import 'package:sensor/Core/constance/my_colors.dart';
 import 'package:sensor/Features/quiz/presentation/views/widgets/custom_question.dart';
 
@@ -45,6 +46,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '1',
                   value2: '2',
                   value3: '3',
+                  index: 0,
                 ),
                 const SizedBox(
                   height: 30,
@@ -57,6 +59,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '4',
                   value2: '5',
                   value3: '6',
+                  index: 1,
                 ),
                 const SizedBox(
                   height: 30,
@@ -69,6 +72,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '7',
                   value2: '8',
                   value3: '9',
+                  index: 2,
                 ),
                 const SizedBox(
                   height: 30,
@@ -82,6 +86,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '10',
                   value2: '11',
                   value3: '12',
+                  index: 3,
                 ),
                 const SizedBox(
                   height: 30,
@@ -94,6 +99,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '13',
                   value2: '14',
                   value3: '15',
+                  index: 4,
                 ),
                 const SizedBox(
                   height: 30,
@@ -107,6 +113,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '16',
                   value2: '17',
                   value3: '18',
+                  index: 5,
                 ),
                 const SizedBox(
                   height: 30,
@@ -119,6 +126,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '19',
                   value2: '20',
                   value3: '21',
+                  index: 6,
                 ),
                 const SizedBox(
                   height: 30,
@@ -131,6 +139,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '22',
                   value2: '23',
                   value3: '24',
+                  index: 7,
                 ),
                 const SizedBox(
                   height: 30,
@@ -143,6 +152,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '25',
                   value2: '26',
                   value3: '27',
+                  index: 8,
                 ),
                 const SizedBox(
                   height: 30,
@@ -155,6 +165,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   value1: '28',
                   value2: '29',
                   value3: '30',
+                  index: 9,
                 ),
                 const SizedBox(
                   height: 30,
@@ -180,7 +191,28 @@ class _QuizScreenState extends State<QuizScreen> {
                         fontSize: 25,
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      for (int i = 0; i < AppVariables.answers.length; i++) {
+                        if (AppVariables.answers[i] == 2.toString() ||
+                            AppVariables.answers[i] == 11.toString() ||
+                            AppVariables.answers[i] == 17.toString() ||
+                            AppVariables.answers[i] == 29.toString()) {
+                          AppVariables.xValue += 5;
+                        } else if (AppVariables.answers[i] == 5.toString() ||
+                            AppVariables.answers[i] == 8.toString() ||
+                            AppVariables.answers[i] == 14.toString() ||
+                            AppVariables.answers[i] == 21.toString() ||
+                            AppVariables.answers[i] == 23.toString() ||
+                            AppVariables.answers[i] == 24.toString() ||
+                            AppVariables.answers[i] == 27.toString()) {
+                          AppVariables.xValue += 10;
+                        }
+                      }
+                      print("AppVariables.answers");
+                      print(AppVariables.answers);
+                      print("AppVariables.xValue");
+                      print(AppVariables.xValue);
+                    },
                   ),
                 ),
               ],

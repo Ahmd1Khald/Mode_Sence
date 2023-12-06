@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sensor/Core/constance/app_variables.dart';
 
 import '../../../../../Core/constance/my_colors.dart';
 
@@ -13,9 +14,11 @@ class CustomQuestion extends StatefulWidget {
       //required this.selectedValue,
       required this.value1,
       required this.value2,
-      required this.value3})
+      required this.value3,
+      required this.index})
       : super(key: key);
 
+  final int index;
   final String question;
   final String ans1;
   final String ans2;
@@ -48,7 +51,7 @@ class _CustomQuestionState extends State<CustomQuestion> {
           ),
         ),
         const SizedBox(
-          height: 30,
+          height: 20,
         ),
         Row(
           children: [
@@ -74,6 +77,7 @@ class _CustomQuestionState extends State<CustomQuestion> {
                   selectedValue = value!;
                   setState(() {});
                   print(value);
+                  AppVariables.answers[widget.index] = value;
                 },
               ),
             ),
@@ -103,6 +107,7 @@ class _CustomQuestionState extends State<CustomQuestion> {
                   selectedValue = value!;
                   setState(() {});
                   print(value);
+                  AppVariables.answers[widget.index] = value;
                 },
               ),
             ),
@@ -132,6 +137,7 @@ class _CustomQuestionState extends State<CustomQuestion> {
                   selectedValue = value!;
                   setState(() {});
                   print(value);
+                  AppVariables.answers[widget.index] = value;
                 },
               ),
             ),
