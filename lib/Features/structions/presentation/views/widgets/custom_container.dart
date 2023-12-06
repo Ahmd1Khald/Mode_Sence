@@ -12,22 +12,22 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.85,
-      height: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.width * 0.9,
+      height: MediaQuery.of(context).size.width * 1.1,
       decoration: BoxDecoration(
         color: AppColors.creamColor,
         borderRadius: BorderRadius.circular(30),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(
-          horizontal: 12.0,
-          vertical: 12,
+          horizontal: 15.0,
+          vertical: 15,
         ),
         child: SingleChildScrollView(
           child: Text(
             text,
-            textDirection: TextDirection.rtl,
-            textAlign: TextAlign.center,
+            textDirection: TextDirection.ltr,
+            textAlign: TextAlign.left,
             style: GoogleFonts.noticiaText(
               fontSize: fontSize,
               fontWeight: FontWeight.w400,
