@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sensor/Core/constance/app_function.dart';
 import 'package:sensor/Core/constance/my_colors.dart';
+import 'package:sensor/Features/result/presentation/views/result_screen.dart';
 
-import '../../../quiz/presentation/views/quiz_screen.dart';
+import '../../../../Core/helpers/cachehelper.dart';
 
 class UseSensorScreen extends StatefulWidget {
   const UseSensorScreen({Key? key}) : super(key: key);
@@ -65,8 +66,9 @@ class _UseSensorScreenState extends State<UseSensorScreen> {
                       ),
                     ),
                     onPressed: () {
+                      CacheHelper.saveData(key: 'readed', value: false);
                       AppFunctions.pushTo(
-                          context: context, screen: const QuizScreen());
+                          context: context, screen: const ResultScreen());
                     },
                   ),
                 ),

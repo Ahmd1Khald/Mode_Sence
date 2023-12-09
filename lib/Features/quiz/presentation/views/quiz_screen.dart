@@ -4,8 +4,7 @@ import 'package:sensor/Core/constance/app_function.dart';
 import 'package:sensor/Core/constance/app_variables.dart';
 import 'package:sensor/Core/constance/my_colors.dart';
 import 'package:sensor/Features/quiz/presentation/views/widgets/custom_question.dart';
-
-import '../../../result/presentation/views/result_screen.dart';
+import 'package:sensor/Features/use_sensor/presentation/views/use_sensor_screen.dart';
 
 class QuizScreen extends StatefulWidget {
   const QuizScreen({Key? key}) : super(key: key);
@@ -217,7 +216,7 @@ class _QuizScreenState extends State<QuizScreen> {
                       print(AppVariables.xValue);
 
                       AppFunctions.pushTo(
-                          context: context, screen: const ResultScreen());
+                          context: context, screen: const UseSensorScreen());
                     },
                   ),
                 ),

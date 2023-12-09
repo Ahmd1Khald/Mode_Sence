@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sensor/Core/constance/app_function.dart';
+import 'package:sensor/Features/quiz/presentation/views/quiz_screen.dart';
 
 import '../../../../Core/constance/my_colors.dart';
 import '../../../instructions/presentation/views/instructions_screen.dart';
-import '../../../use_sensor/presentation/views/result_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   splashColor: AppColors.creamColor,
                   onTap: () {
                     AppFunctions.pushTo(
-                        context: context, screen: const UseSensorScreen());
+                        context: context, screen: const QuizScreen());
                   },
                   child: Column(
                     //crossAxisAlignment: CrossAxisAlignment.center,

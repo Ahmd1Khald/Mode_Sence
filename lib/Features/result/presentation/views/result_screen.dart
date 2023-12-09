@@ -2,6 +2,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sensor/Core/constance/app_variables.dart';
+import 'package:sensor/Core/helpers/cachehelper.dart';
 import 'package:sensor/Features/result/presentation/views/widgets/instructions_of_result.dart';
 
 import '../../../../Core/constance/app_function.dart';
@@ -29,13 +30,21 @@ class _ResultScreenState extends State<ResultScreen> {
             Object? hrValue = snapshot.data!.child('heart_rate').value;
             print(oValue);
             print(hrValue);
-            if (oValue is int && oValue < 94) {
-              AppVariables.xValue += 10;
+            if (oValue is int &&
+                oValue > -1 &&
+                hrValue is int &&
+                hrValue > -1) {
+              if (CacheHelper.getDate(key: 'readed') == false) {
+                CacheHelper.saveData(key: 'readed', value: true);
+                if (hrValue > 100 || hrValue < 60) {
+                  AppVariables.xValue += 10;
+                }
+                if (oValue > 94) {
+                  AppVariables.xValue += 10;
+                }
+              }
             }
-            if (hrValue is int && hrValue > 100 ||
-                hrValue is int && hrValue < 60) {
-              AppVariables.xValue += 10;
-            }
+
             return Scaffold(
               backgroundColor: AppColors.appBackGroundColor,
               body: SafeArea(

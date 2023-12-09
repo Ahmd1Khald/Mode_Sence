@@ -26,6 +26,8 @@ dependencies:
   url_launcher: ^6.0.14
   #files
   syncfusion_flutter_pdfviewer: ^23.2.6
+  #cache
+  shared_preferences:
   #firebase
   firebase_core: ^2.21.0
   firebase_database: ^10.3.3
